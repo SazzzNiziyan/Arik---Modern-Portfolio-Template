@@ -1,0 +1,122 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  color: wheat;
+  scrollbar-width: none;
+  overflow-x: hidden;
+  background-color: #0e0e0e;
+}
+
+html {
+  font-family: Gilroy;
+}
+
+main {
+  width: 100%;
+}
+
+.veiw-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 4em;
+  width: 100%;
+}
+.veiw-1 img {
+  width: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.veiw-1 h1 {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 3em;
+}
+.veiw-1 p {
+  text-align: center;
+  font-weight: 100;
+  line-height: 1.6;
+  font-size: 1.2em;
+  margin: 0.9em 0;
+  opacity: 0.6;
+}
+.veiw-1 p br {
+  display: none;
+}
+.veiw-1 span {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 100;
+}
+
+.veiw-2 {
+  width: 103%;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+.veiw-2 .marquee {
+  display: flex;
+  gap: 3px;
+  overflow: hidden;
+  position: relative;
+}
+.veiw-2 .marquee::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  background-image: linear-gradient(to right, #0e0e0e, transparent, #0e0e0e);
+}
+.veiw-2 .marquee .text {
+  display: flex;
+  gap: 3rem;
+  animation: marquee 6s linear infinite both;
+}
+.veiw-2 .marquee .text p {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@media (min-width: 1020px) {
+  html {
+    font-size: clamp(16px, 1vw, 20px);
+  }
+  .veiw-1 img {
+    width: 28%;
+  }
+  .veiw-1 h1 {
+    font-size: 8.9rem;
+  }
+  .veiw-1 p, .veiw-1 pre {
+    font-size: 1.6rem;
+  }
+  .veiw-1 p br, .veiw-1 pre br {
+    display: block;
+  }
+  .veiw-2 {
+    width: 178%;
+    padding: 4rem 15rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .veiw-2 .marquee {
+    width: 50%;
+  }
+}/*# sourceMappingURL=style.css.map */
