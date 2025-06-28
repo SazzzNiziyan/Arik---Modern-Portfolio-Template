@@ -56,14 +56,13 @@ main {
 }
 
 .veiw-2 {
-  width: 103%;
+  width: 100%;
   padding: 4rem 2rem;
   display: flex;
   justify-content: center;
 }
 .veiw-2 .marquee {
   display: flex;
-  gap: 3px;
   overflow: hidden;
   position: relative;
 }
@@ -79,7 +78,8 @@ main {
 .veiw-2 .marquee .text {
   display: flex;
   gap: 3rem;
-  animation: marquee 6s linear infinite both;
+  padding: 0 1.5rem;
+  animation: marquee 10s linear infinite both;
 }
 .veiw-2 .marquee .text p {
   font-size: 2rem;
